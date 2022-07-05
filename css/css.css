@@ -1,6 +1,7 @@
-button {
+.para {
     background:none; 
     border:none; 
+    font-size: large;
 }
 #title1, #title2{
     display: block;

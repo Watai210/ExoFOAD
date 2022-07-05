@@ -6,12 +6,11 @@
 // function settxt() {
 //     var text = document.getElementById("txtbox").value;
 //     alert('Hello World !');
-
 // }
+
 function showHxContent1() {
     var content = document.getElementById('title1');
     
-    alert('test')
     if (content.style.display === 'none'){
         content.style.display = 'block';
     } else {
@@ -22,11 +21,37 @@ function showHxContent1() {
 function showHxContent2() {
     var content = document.getElementById('title2');
     
-    alert('test2')
     if (content.style.display === 'none'){
         content.style.display = 'block';
     } else {
         content.style.display = 'none';
+    }
+}
+
+function cacher() {
+    var para1 = document.getElementById('title1');
+    var para2 = document.getElementById('title2');
+
+    if (para1.style.display === 'block' || para2.style.display === 'block'){
+        para1.style.display = 'none';
+        para2.style.display = 'none';
+    }
+}
+
+function choixtitre() {
+    var para1 = document.getElementById('title1');
+    var para2 = document.getElementById('title2');
+    const val = document.querySelector('input').value;
+    console.log(val);
+
+    if (val === '1'){
+        para1.style.display = 'block';
+        para2.style.display = 'none';
+    } else if (val === '2'){
+        para1.style.display = 'none';
+        para2.style.display = 'block';
+    } else {
+        alert('Aucun paragraphe avec ce numero')
     }
 }
 

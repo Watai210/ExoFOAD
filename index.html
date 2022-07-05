@@ -19,25 +19,26 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Mon titre</title>
+    <link rel="stylesheet" href="css/css.css">
     <script type="text/javascript" src="js/js.js"></script>
 </head>
 <body>
-    <h1 onClick="showHxContent1">Partie1</h1>
+    <button type="button" class="para" onclick="showHxContent1()">Partie 1</button>
     <div id="title1" style="display:none">
-        <p>Mon premier paragraphe</p>
-        <p>Mon second paragraphe</p>
+        <p>Mon premier paragraphe 1</p>
+        <p>Mon second paragraphe 1</p>
     </div>
-    <h1 onClick="showHxContent2">Partie2</h1>
+    <button type="button" class="para" onclick="showHxContent2()">Partie 2</button>
     <div id="title2" style="display:none">
-        <p>Mon premier paragraphe</p>
-        <p>Mon second paragraphe</p>
+        <p>Mon premier paragraphe 2</p>
+        <p>Mon second paragraphe 2</p>
     </div>
     <p>
-    <input type="submit" value="Masquer" onClick="hideAllDivs()"/>
+    <button type="button" onclick="cacher()">Cacher le texte</button>
     </p>
     <p>
     Titre nÂ°: <input type="text" id="title"/>
-    <input type="submit" value="Afficher" onClick="alertTitle()"/>
+    <button type="button" onclick="choixtitre()">Saisissez le numero du paragraphe a afficher</button>
     </p>
 </body>
 </html>
