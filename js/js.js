@@ -4,6 +4,7 @@ function gettxt() {
 }
 
 function settxt() {
-    var text = document.getElementById("txtbox").value = 'Hello World !';
+    var text = document.getElementById("txtbox").value;
+    alert('Hello World !');
 
 }
