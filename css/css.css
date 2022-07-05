@@ -1,0 +1,7 @@
+button {
+    background:none; 
+    border:none; 
+}
+#title1, #title2{
+    display: block;
+}
