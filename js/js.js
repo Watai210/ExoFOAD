@@ -41,7 +41,7 @@ function cacher() {
 function choixtitre() {
     var para1 = document.getElementById('title1');
     var para2 = document.getElementById('title2');
-    const val = document.querySelector('input').value;
+    const val = document.querySelector('#title').value;
     console.log(val);
 
     if (val === '1'){
@@ -52,6 +52,25 @@ function choixtitre() {
         para2.style.display = 'block';
     } else {
         alert('Aucun paragraphe avec ce numero')
+    }
+}
+
+function suppr() {
+    var page = document.getElementById('pagetitle');
+
+    if (page != '' ){
+        page.remove();
+    }
+}
+
+function nouveautitre() {
+    const val = document.querySelector('#paget').value;
+    console.log(val);
+
+    if (val != ''){
+        document.title = val;
+    } else{
+        alert('Veuillez entrer un titre valide');
     }
 }
 

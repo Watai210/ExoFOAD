@@ -18,27 +18,35 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Mon titre</title>
+    <title id="pagetitle">Mon titre</title>
     <link rel="stylesheet" href="css/css.css">
     <script type="text/javascript" src="js/js.js"></script>
 </head>
 <body>
-    <button type="button" class="para" onclick="showHxContent1()">Partie 1</button>
+    <h1 class="para" onclick="showHxContent1()">Partie 1</h1>
     <div id="title1" style="display:none">
         <p>Mon premier paragraphe 1</p>
         <p>Mon second paragraphe 1</p>
     </div>
-    <button type="button" class="para" onclick="showHxContent2()">Partie 2</button>
+    <h1 class="para" onclick="showHxContent2()">Partie 2</h1>
     <div id="title2" style="display:none">
         <p>Mon premier paragraphe 2</p>
         <p>Mon second paragraphe 2</p>
     </div>
     <p>
-    <button type="button" onclick="cacher()">Cacher le texte</button>
+        <button type="button" onclick="cacher()">Cacher le texte</button>
     </p>
     <p>
-    Titre nÂ°: <input type="text" id="title"/>
-    <button type="button" onclick="choixtitre()">Saisissez le numero du paragraphe a afficher</button>
+        Para : <input type="text" id="title"/>
+        <button type="button" onclick="choixtitre()">Saisissez le numero du paragraphe a afficher</button>
     </p>
+    <p>
+        <button type="button" onclick="suppr()">Supprimer le titre de la page</button>
+    </p>
+    <p>
+        Titre page: <input type="text" id="paget"/>
+        <button type="button" onclick="nouveautitre()">Saisissez le nouveau titre de la page</button>
+    </p>
+
 </body>
 </html>
