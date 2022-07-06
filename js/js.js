@@ -70,7 +70,7 @@ function nouveautitre() {
     if (val != ''){
         document.title = val;
     } else{
-        alert('Veuillez entrer un titre valide');
+        alert('Veuillez supprimer le titre deja present');
     }
 }
 
